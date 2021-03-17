@@ -16,20 +16,8 @@
   font-family: 'Rajdhani', sans-serif;
 }
 
-/* ------------ NavBar ------------ */
-.navBar {
-  background-color: lightgray;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-}
-.logo {
-  size: 40px;
-}
-
-/* ------------ Main Content ------------ */
-.main {
+/* ------------ Page ------------ */
+.page {
   background-color: lightgray;
   padding: 20px;
 
@@ -46,73 +34,11 @@
   grid-template-rows: 1fr 3fr;
 }
 
-/* ------------ Calendar ------------ */
-.calendar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.date {
-  margin: 0 auto;
-  font-size: 40px;
-}
-.time {
-  margin: 0 auto;
-  font-size: 30px;
-}
-
-/* ------------ To Do List ------------ */
-.toDoContainer{
-  padding:10px;
-  width:100%;
-  margin:0 auto;
-}
-.toDoContainer .title {
-  text-align: center;
-}
-.toDoContainer .content {
-  overflow: auto;
-}
-.toDoContainer .content::-webkit-scrollbar { 
-  display: none; 
-}
-.toDoContainer .content .list .item{
-  width: 100%;
-  height: 45px;
-  min-height: 45px;
-  position: relative;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  list-style: none;
-}
-.toDoContainer .content .list .item .itemName {
-  font-size: 50px;
-}
-
-
-
-
-
-
-
-/* ------------ Notes ------------ */
-.notes {
+/* ------------ Main Content ------------ */
+.mainContent {
   display: grid;
   grid-gap: 20px;
   padding: 20px;
-}
-.textboxContainer {
-  height: 100%;
-  width: 100%;
-
-  display: grid;
-  grid-gap: 20px;
-  padding: 20px;
-  grid-template-rows: 1fr 9fr;
-}
-.docTitle {
-  text-align: left;
-  font-size: xx-large;
 }
 
 /* ------------ Right Side Bar ------------ */

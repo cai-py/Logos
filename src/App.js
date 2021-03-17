@@ -2,40 +2,24 @@ import React from 'react'
 import './App.css';
 
 // Components 
+import NavBar from './components/navBar'
 import ToDoList from './components/toDoList'
-
-// FontAwsome
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faCheckSquare, faCoffee)
+import Calendar from './components/calendar'
+import Notes from './components/notes'
 
 class App extends React.Component {
   
   render() {
-    let date = new Date();
-    let month = date.getMonth();
-    let months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     return (
       <div className="App">
-        <div className="navBar">
-          <h1 className="logo">Logos</h1>
-        </div>
-        <div className="main">
+        <NavBar/>
+        <div className="page">
           <div className="leftSB white">
-            <div className="calendar grey">
-              <h3 className="date">{months[month]}</h3>
-              <h2 className="time">{date.getDate()}</h2>
-            </div>
-            <div className="toDoList grey">
-              <ToDoList/>
-            </div>
+            <Calendar/>
+            <ToDoList/>
           </div>
-          <div className="notes white">
-            <div className="grey textboxContainer">
-              <textarea className='docTitle'></textarea>
-              <textarea className='docText'></textarea>
-            </div>
+          <div className="mainContent white">
+            <Notes/>
           </div>
           <div className="rightSB white">
             <div className="grey">Time Blocks</div>

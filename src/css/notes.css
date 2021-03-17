@@ -1,0 +1,12 @@
+.textboxContainer {
+    height: 100%;
+    width: 100%;
+  
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-rows: 1fr 13fr;
+}
+.docTitle {
+    text-align: left;
+}

@@ -1,0 +1,11 @@
+.navBarContainer {
+    background-color: lightgray;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    background: lightgrey;
+}
+.logo {
+    size: 40px;
+}

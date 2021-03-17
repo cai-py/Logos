@@ -1,0 +1,15 @@
+.calendarContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+  }
+  .date {
+    margin: 0 auto;
+    font-size: 40px;
+  }
+  .time {
+    margin: 0 auto;
+    font-size: 30px;
+  }

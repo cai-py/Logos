@@ -1,0 +1,72 @@
+.toDoListContainer {
+  background: lightgrey;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 12fr 1fr;
+}
+
+/* ------------ Title ------------ */
+.titleCont {
+  display: flex;
+}
+.td-title {
+  margin: auto;
+}
+
+/* ------------ List ------------ */
+.listCont {
+  width: 100%;
+  height: 100%;
+}
+.td-list {
+  height: 100%;
+  width: 100%;
+  max-width: 170px;
+  overflow: auto;
+}
+.td-item {
+  max-width: 170px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  list-style: none;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}.td-item:hover {box-shadow: 5px green;}
+
+/*ICONS*/
+.i-complete {
+  font-size: 20px;
+  margin: auto;
+}.td-item .i-complete:hover {cursor: pointer;}
+
+.i-delete {
+  font-size: 20px;
+  margin: auto;
+}.td-item .i-delete:hover {cursor: pointer;}
+
+/*TEXT DECORATIONS*/
+.lineThrough {
+  text-decoration: line-through;
+}
+
+
+/* ------------ Add To Do ------------ */
+.add-to-do {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 5px;
+}
+.i-input {
+  margin: auto;
+}
+.td-input {
+  height: 100%;
+}
+
+
+/* ------------ Delete ------------ */
+.green {
+  background: green;
+}
